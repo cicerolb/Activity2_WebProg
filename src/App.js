@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from './components/Counter'
+import Navbar from './components/Navbar';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import About from './components/About';
+import NotFound from './components/NotFound';
+import CounterPage from './components/CounterPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+        <Route index element={<Home />} />
+
+          <Route path='Home' element={<Home/>}/>
+          <Route path='Contact' element={<Contact/>}/>
+          <Route path='About' element={<About/>}/>
+          <Route path='NotFound' element={<NotFound/>}/>
+          <Route path='CounterPage' element={<CounterPage/>}/>
+
+
+
+
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+
+  )
 }
 
 export default App;

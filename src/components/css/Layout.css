@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.error{
+    margin-top: 250px;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    font-size: 50px;
+}
+.general{
+    margin-top: 250px;
+    font-size: 30px;
+}
