@@ -20,6 +20,8 @@ function App() {
           <Route path='About' element={<About/>}/>
           <Route path='NotFound' element={<NotFound/>}/>
           <Route path='CounterPage' element={<CounterPage/>}/>
+          <Route path='*' element={<NotFound/>}/>
+
 
 
 
